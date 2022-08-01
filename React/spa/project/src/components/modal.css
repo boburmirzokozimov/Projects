@@ -1,0 +1,39 @@
+.modal {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+}
+
+.form-holder {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 300px;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: var(--card);
+  border-radius: 10px;
+  transition: 0.3s ease;
+  z-index: 10;
+}
+.form-holder input {
+  margin-top: 20px;
+}
+.cancelBtn {
+  position: absolute;
+  color: red;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  right: 10px;
+  top: 10px;
+}

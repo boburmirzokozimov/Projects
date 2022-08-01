@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  color: var(--fourth);
+}
+:root {
+  --bgc-color: #94b49f;
+  --container: #cee5d0;
+  --third: #fcf8e8;
+  --fourth: #ecb390;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--bgc-color);
+}
+.App {
+  background-color: var(--container);
+  margin: auto;
+  margin-top: 25px;
+  min-height: 400px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.center {
+  display: flex;
+}
+form input {
+  border-radius: 10px;
+  margin-right: 5px;
+  border-style: none;
+  background-color: var(--fourth);
+  padding: 10px;
+  color: #fff;
+}
+input:focus-visible {
+  outline: none;
+}
+form button {
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.todo-list span {
+  padding: 10px;
+  cursor: pointer;
+}
+input:checked + p {
+  text-decoration: line-through;
+}
