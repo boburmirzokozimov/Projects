@@ -118,7 +118,7 @@ export const Info = (props) => {
     } = props;
 
     useEffect(() => {
-        if (!borders.length)
+        if (borders.length)
             axios.get(filterByCode(borders)).then(({ data }) => setNeighbours(data.map(c => c.name)))
     }, [location])
 
