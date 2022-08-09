@@ -51,13 +51,20 @@ form input {
   align-items: center;
   margin-top: 25px;
 }
-.book-element {
+li {
   background-color: var(--text);
   margin-right: 10px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
 }
-li{
+.book-element-finished {
+  background-color: lightcoral;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+li {
   list-style-type: none;
 }
