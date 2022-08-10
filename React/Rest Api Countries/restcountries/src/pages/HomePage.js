@@ -37,6 +37,12 @@ export const HomePage = ({ countries, setCountries, search, setSearch, region, s
         .catch(err => console.log(err))
         handleSearch();
     }, [countries])
+    useEffect(() => {
+        axios.get(`https://restcountries.com/v2/name/${search}?`)
+            .then(res => setCountries(res.data))
+            .catch(err => console.log(err))
+        handleSearch();
+    }, [search])
 
     return <>
         <Controls onSearch={handleSearch} search={search} setSearch={setSearch} region={region} setRegion={setRegion} />

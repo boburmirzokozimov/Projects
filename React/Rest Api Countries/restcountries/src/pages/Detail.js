@@ -12,11 +12,9 @@ export const Detail = () => {
     const [country, setCountry] = useState(null)
 
     useEffect(() => {
-        return () => {
-            axios.get(searchByCountries(name))
-                .then(({data}) => setCountry(data[0]))
-                .catch(err => console.log(err))
-        };
+        axios.get(searchByCountries(name))
+            .then(({ data }) => setCountry(data[0]))
+            .catch(err => console.log(err))
     }, [name])
 
 
